@@ -1,0 +1,5 @@
+a = input().split()
+a = list(map(int, a))
+print(a[0] + 8)
+print(a[1] * 3)
+print((a[0]+8) * (a[1]*3))
