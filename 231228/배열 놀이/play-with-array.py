@@ -14,3 +14,4 @@ for _ in range(q):
     else:
         for i in range (qus[1] - 1, qus[2]):
             print(arr[i], end=" ")
+        print()
