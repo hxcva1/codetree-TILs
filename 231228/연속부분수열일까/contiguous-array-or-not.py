@@ -12,6 +12,7 @@ for i in range(len(n1)):
         idx = 0
     if idx == m:
         flag = 1
+        break
 if flag:
     print("Yes")
 else:
