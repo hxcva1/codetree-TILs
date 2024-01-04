@@ -11,6 +11,6 @@ for i in range(n):
             mx2 = mx
             break;
         continue
-    if arr[i] > mx2 and mx2 < mx:
+    if arr[i] > mx2:
         mx2 = arr[i]
 print(mx, mx2)
