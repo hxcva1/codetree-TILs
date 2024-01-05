@@ -4,9 +4,7 @@ n = int(input())
 
 arr = list(map(int, input().split()))
 
-idx = n-1
-if n == 1:
-    print(0)
+idx = n
 while idx:
     mx = -sys.maxsize
     mxidx = 0
