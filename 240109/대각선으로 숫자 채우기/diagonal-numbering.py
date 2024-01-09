@@ -1,15 +1,13 @@
 n, m = tuple(map(int, input().split()))
 
 arr = [
-    [0 for _ in range(n)]
-    for _ in range(m)
+    [0 for _ in range(m)]
+    for _ in range(n)
 ]
 cnt = 1
 row = 0
 for col in range(m):
     if (col == m - 1):
-        tempc = col
-        tempr = row
         while(row < n):
             tempc = col
             tempr = row
@@ -29,7 +27,7 @@ for col in range(m):
         tempr += 1
     col += 1
 
-for row in arr:
-    for elem in row:
-        print(elem, end = " ")
-    print()
+# for row in arr:
+#     for elem in row:
+#         print(elem, end = " ")
+#     print()
