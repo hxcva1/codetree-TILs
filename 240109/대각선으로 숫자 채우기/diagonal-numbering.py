@@ -27,7 +27,7 @@ for col in range(m):
         tempr += 1
     col += 1
 
-# for row in arr:
-#     for elem in row:
-#         print(elem, end = " ")
-#     print()
+for row in arr:
+    for elem in row:
+        print(elem, end = " ")
+    print()
