@@ -1,3 +1,8 @@
 string, c = tuple(input().split())
 
-print(string.find(c))
+flag = string.find(c)
+
+if flag == -1:
+    print("No")
+else:
+    print(flag)
