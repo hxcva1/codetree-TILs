@@ -1,8 +1,6 @@
 y, m, d = map(int, input().split())
 
 flag = 0
-#존재하면 계절 출력
-#윤년인가?
 def is_yoon(y):
     if y % 4 == 0 and (y % 100 != 0 or y % 400 == 0):
         return True
@@ -29,7 +27,7 @@ elif m == 4 or m == 6 or m == 9 or m == 11:
     if d > 30:
         flag = 1
 
-if flag:
+if flag == 1:
     print(-1)
 else:
     print(season(m))
