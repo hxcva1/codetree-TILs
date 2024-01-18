@@ -23,7 +23,7 @@ if m == 2:
         if d > 29:
             flag = 1
     else:
-        if d > 30:
+        if d > 28:
             flag = 1
 elif m == 4 or m == 6 or m == 9 or m == 11:
     if d > 30:
