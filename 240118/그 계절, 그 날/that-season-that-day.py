@@ -17,7 +17,7 @@ def season(m):
         return "Winter"
 
 if m == 2:
-    if is_yoon:
+    if is_yoon == True:
         if d > 29:
             flag = 1
     else:
@@ -26,6 +26,7 @@ if m == 2:
 elif m == 4 or m == 6 or m == 9 or m == 11:
     if d > 30:
         flag = 1
+
 
 if flag == 1:
     print(-1)
