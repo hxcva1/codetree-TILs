@@ -13,7 +13,7 @@ def season(m):
         return "Summer"
     elif m >= 9 and m <= 11:
         return "Fall"
-    elif: m == 12 or m >= 1 and m <= 2
+    elif m == 12 or m >= 1 and m <= 2:
         return "Winter"
 
 if m == 2:
