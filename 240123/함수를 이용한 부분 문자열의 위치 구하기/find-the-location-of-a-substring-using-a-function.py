@@ -1,6 +1,9 @@
-s = input()
-t = input()
+num = 10
 
-def func(s, t):
-    return s.find(t)
-print(func(s, t))
+
+def modify():
+    print(num)
+
+
+modify()
+print(num)
