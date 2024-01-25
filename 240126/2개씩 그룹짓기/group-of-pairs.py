@@ -2,6 +2,9 @@ n = int(input())
 
 arr = list(map(int, input().split()))
 arr.sort()
-arr1 = arr[:n//2] + arr[-(n//2):]
-arr2 = arr[n//2:-n//2]
-print(max(sum(arr1), sum(arr2)))
+arr1 = arr
+arr2 = arr[::-1]
+mx = arr1[0] + arr2[0]
+for i in range(2*n):
+    mx = max(mx, arr1[i]+arr2[i])
+print(mx)
