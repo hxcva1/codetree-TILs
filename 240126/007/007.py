@@ -6,6 +6,6 @@ class Person:
 a = input().split()
 
 person1 = Person(a[0], a[1], a[2])
-print(f"secret code: {person1.code}")
+print(f"secret code : {person1.code}")
 print(f"meeting point : {person1.place}")
 print(f"time : {person1.time}")
