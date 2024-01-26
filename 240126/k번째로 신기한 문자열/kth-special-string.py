@@ -8,7 +8,7 @@ a = [
 ]
 
 arr = [
-    elem for elem in a if elem.find(T) != -1
+    elem for elem in a if elem[:len(T)] == T
 ]
 
 arr.sort()
