@@ -10,5 +10,5 @@ def f(n):
         print(n%2, end='')
         return
     f(n//2)
-    print(n%2)
+    print(n%2,end='')
 f(ret)
