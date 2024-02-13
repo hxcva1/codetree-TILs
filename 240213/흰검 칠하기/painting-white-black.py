@@ -13,11 +13,13 @@ for _ in range(n):
             arr[now] = 1
             black[now] += 1
             now += 1
+        now -= 1
     else:
         for i in range(int(x)):
-            now -= 1
             arr[now] = -1
             white[now] += 1
+            now -= 1
+        now += 1
 
 w = b = g = 0
 for i in range(200001):
