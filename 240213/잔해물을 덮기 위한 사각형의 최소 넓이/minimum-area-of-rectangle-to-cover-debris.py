@@ -14,7 +14,7 @@ for i in range(x1, x2):
         arr[i+offset][j+offset] = 0
 mnx = mny = 2001
 mxx = mxy = 0
-
+flag = 1
 for i in range(2001):
     for j in range(2001):
         if arr[i][j] == 1:
@@ -26,7 +26,8 @@ for i in range(2001):
                 mny = j
             if j > mxy:
                 mxy = j
-if (mxx-mnx == 0 or mxy - mny == 0):
+            flag = 0
+if flag:
     print(0)
 else:
     print((mxx-mnx+1) * (mxy - mny+1))
