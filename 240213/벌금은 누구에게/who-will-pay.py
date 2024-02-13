@@ -5,9 +5,10 @@ flag = False
 for _ in range(m):
     num = int(input())
     arr[num] += 1
-    if arr[num] >= k:
+    if arr[num] == k:
         print(num)
         flag = True
+        break
 
 if flag == False:
     print(-1)
