@@ -17,6 +17,7 @@ for _ in range(n):
             a[i] = pos
             pos -= 1
             i += 1
+movea = i
 pos = 0
 i = 0
 for _ in range(m):
@@ -31,8 +32,9 @@ for _ in range(m):
             b[i] = pos
             pos -= 1
             i += 1
+moveb = i
 flag = 1
-for j in range(1,1000000):
+for j in range(1,min(movea, moveb)):
     if a[j] == b[j]:
         print(j)
         flag = 0
