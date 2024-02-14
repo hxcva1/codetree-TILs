@@ -6,17 +6,20 @@ for _ in range(T):
     inp.append((t,x,y))
 
 inp.sort(key=lambda x : x[0])
-
-arr = [0] * (n+2)
+arr = [0] * (n+1)
+hand = [0] * (n+1)
 arr[p] = 1
-cnt = 0
 for elem in inp:
-    if cnt < k and (arr[elem[1]] == 1 or arr[elem[2]] == 1) :
-        cnt += 1
-        arr[elem[1]] = 1
-        arr[elem[2]] = 1
-
+    if arr[elem[1]] == 1 and arr[elem[2]] == 1:
+        hand[elem[1]] += 1
+        hand[elem[2]] += 1
+    if arr[elem[1]] == 1:
+        if hand[elem[1]] < k:
+            hand[elem[1]] += 1
+            arr[elem[2]] = 1
+    elif arr[elem[2]] == 1:
+        if hand[elem[2]] < k:
+            hand[elem[2]] += 1
+            arr[elem[1]] = 1
 for i in range(1, n+1):
     print(arr[i], end='')
-s = "01100100101001000111101010000000000001000000000100000101001110101100011010110"
-t = "00100100101001000011001010000000000000000000000000000001001100101000010000100"
