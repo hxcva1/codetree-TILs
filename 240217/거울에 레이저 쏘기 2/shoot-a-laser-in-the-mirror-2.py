@@ -21,11 +21,11 @@ def next_dir(now, mirror):
         if now == 0:
             return 1
         elif now == 1:
-            return 2
+            return 0
         elif now == 2:
             return 3
         else:
-            return 0
+            return 2
     else:
         if now == 0:
             return 3
