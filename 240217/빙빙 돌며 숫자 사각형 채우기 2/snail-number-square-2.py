@@ -10,15 +10,16 @@ arr = [
 ]
 
 def in_range(x, y):
-    return 0 <= x and x < n and 0 <= y and y < n
+    return 0 <= x and x < n and 0 <= y and y < m
 
 cnt = 1
 x, y = 0, 0
 while cnt <= n*m:
     arr[x][y] = cnt
     nx, ny = x + dxs[c_dir], y + dys[c_dir]
-    if not in_range(nx, ny) or arr[nx][ny] != 0:
+    if (not in_range(nx, ny)) or arr[nx][ny] != 0:
         c_dir = (c_dir + 1) % 4
+        print("wefe")
     x, y = x + dxs[c_dir], y + dys[c_dir]
     cnt += 1
 
