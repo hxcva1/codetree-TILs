@@ -30,11 +30,11 @@ def next_dir(now, mirror):
         if now == 0:
             return 3
         elif now == 1:
-            return 0
+            return 2
         elif now == 2:
             return 1
         else:
-            return 2
+            return 0
 x, y = 0, 0
 cnt = 0
 c_dir = 0
