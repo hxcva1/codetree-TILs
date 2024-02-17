@@ -52,15 +52,15 @@ c_dir = 0
 k = int(input())
 
 
-if k // 4 == 0:
+if (k-1) // n == 0:
     x = 0
     y = (k - 1) % n
     c_dir = 1
-elif k // 4 == 1:
+elif (k-1) // n == 1:
     y = n - 1
     x = (k - 1) % n
     c_dir = 2
-elif k // 4 == 2:
+elif (k-1) // n == 2:
     x = n - 1
     y = (n - k % n) % n
     c_dir = 3
@@ -68,7 +68,6 @@ else:
     y = 0
     x = (n - k % n) % n
     c_dir = 0
-
 
 while in_range(x, y):
     cnt += 1
