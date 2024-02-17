@@ -19,7 +19,6 @@ while cnt <= n*m:
     nx, ny = x + dxs[c_dir], y + dys[c_dir]
     if (not in_range(nx, ny)) or arr[nx][ny] != 0:
         c_dir = (c_dir + 1) % 4
-        print("wefe")
     x, y = x + dxs[c_dir], y + dys[c_dir]
     cnt += 1
 
