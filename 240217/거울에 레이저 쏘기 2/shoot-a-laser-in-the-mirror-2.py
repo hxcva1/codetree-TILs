@@ -33,12 +33,16 @@ def next_dir(now, mirror):
             return 2
     #/일때
     else:
+        #오른쪽
         if now == 0:
             return 3
+        #아래
         elif now == 1:
             return 2
+        #왼쪽
         elif now == 2:
             return 1
+        #위로
         else:
             return 0
 
@@ -54,7 +58,7 @@ if k // 4 == 0:
     c_dir = 1
 elif k // 4 == 1:
     y = n - 1
-    x = y = (k - 1) % n
+    x = (k - 1) % n
     c_dir = 2
 elif k // 4 == 2:
     x = n - 1
