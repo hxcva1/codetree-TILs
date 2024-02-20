@@ -1,13 +1,10 @@
 a = input()
-
+n = len(a)
 cnt = 0
-for i in range(n):
-    if a[i] == "(":
-        for j in range(i+1,n):
-            if a[j] == "(":
-                for k in range(j+1,n):
-                    if a[k] == ")":
-                        for l in range(k+1, n):
-                            if a[l] == ")":
-                                cnt += 1
+for i in range(n-3):
+    if a[i] == "(" and a[i+1] == "(":
+        for j in range(i+2,n-1):
+            if a[j] == ")" and a[j+1] == ")":
+                cnt += 1
+           
 print(cnt)
