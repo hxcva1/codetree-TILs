@@ -27,5 +27,7 @@ for i in range(n):
                 break
         else:
             cnt = 1
-
-print(ret)
+if m == 1:
+    print(n*n)
+else:
+    print(ret)
