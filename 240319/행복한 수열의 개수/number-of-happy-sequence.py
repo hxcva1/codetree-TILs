@@ -28,6 +28,6 @@ for i in range(n):
         else:
             cnt = 1
 if m == 1:
-    print(n*n)
+    print(2*n)
 else:
     print(ret)
