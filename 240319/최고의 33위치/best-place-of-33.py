@@ -13,8 +13,9 @@ for i in range(n):
             for k in range(i+3):
                 for l in range(j+3):
                     if k >= n or l >= n:
+                        cnt = 0
                         break
                     if arr[k][l]:
                         cnt += 1
             ret = max(ret, cnt)
-print(cnt)
+print(ret)
