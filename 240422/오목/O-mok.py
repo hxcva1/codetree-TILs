@@ -54,7 +54,7 @@ for i in range(19):
         prev = arr[j][i]
         if cnt == 5:
             winner = arr[j][i]
-            retx, rety = i-1, j+1
+            retx, rety = j-1, i+1
             find = 1
             break
     if find:
