@@ -87,7 +87,7 @@ while start_y != 19:
         prev = arr[x][y]
         if cnt == 5:
             winner = arr[x][y]
-            retx, rety = x - 3, y - 3
+            retx, rety = x - 1, y - 1
             find = 1
             break
         if find:
@@ -149,7 +149,7 @@ while start_y != 0:
         prev = arr[x][y]
         if cnt == 5:
             winner = arr[x][y]
-            retx, rety = x - 3, y + 1
+            retx, rety = x - 1, y + 1
             find = 1
             break
         if find:
@@ -180,7 +180,7 @@ while start_x != 19:
         prev = arr[x][y]
         if cnt == 5:
             winner = arr[x][y]
-            retx, rety = x - 3, y + 1
+            retx, rety = x - 1, y + 1
             find = 1
             break
         if find:
