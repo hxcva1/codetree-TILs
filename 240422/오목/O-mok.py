@@ -6,7 +6,6 @@ arr = [
 winner = 0
 retx, rety = 0, 0
 find = 0
-end = 0
 #가로방향 탐색
 for i in range(19):
     cnt = 0
@@ -191,8 +190,8 @@ while start_x != 19:
         y -= 1
     start_x += 1
 
-
-if find and end == 0:
+if find:
     print(winner)
     print(retx, rety)
-    end = 1
+else:
+    print(0)
