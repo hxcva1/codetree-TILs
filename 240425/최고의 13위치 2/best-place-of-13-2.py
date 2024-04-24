@@ -10,7 +10,7 @@ for i in range(n):
     for j in range(n-2):
         cnt = 0
         cnt += arr[i][j] + arr[i][j+1] + arr[i][j+2]
-        nx, ny = i, j+1
+        nx, ny = i, j+3
         while nx < n:
             while ny < n-2:
                 cnt2 = 0
