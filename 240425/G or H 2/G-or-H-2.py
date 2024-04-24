@@ -4,7 +4,7 @@ MAX_NUM = 100
 
 n = int(input())
 if n == 1:
-    print(1)
+    print(0)
     sys.exit()
 arr = [0] * (MAX_NUM + 1)
 
