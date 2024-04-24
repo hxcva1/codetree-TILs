@@ -21,7 +21,7 @@ for i in range(MAX_NUM + 1):
     if arr[i] != 0:
         cnt_g = 0
         cnt_h = 0
-        if arr[i]:
+        if arr[i] == 1:
             cnt_g += 1
         else:
             cnt_h += 1
@@ -32,5 +32,5 @@ for i in range(MAX_NUM + 1):
                 if arr[j] == -1:
                     cnt_h += 1
                 if cnt_g == cnt_h or cnt_g == 0 or cnt_h == 0:
-                    ans = max(ans, j-i+1)
+                    ans = max(ans, j-i)
 print(ans)
