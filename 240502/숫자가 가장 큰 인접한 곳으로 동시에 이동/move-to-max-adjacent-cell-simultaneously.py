@@ -51,6 +51,6 @@ for _ in range(t):
 cnt = 0
 for i in range(n):
     for j in range(n):
-        if count[i][j] == 1:
+        if count[i][j]:
             cnt += 1
 print(cnt)
