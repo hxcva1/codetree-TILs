@@ -18,5 +18,5 @@ for _ in range(t):
 for elem in arr1:
     print(elem, end=" ")
 print()
-for i in n:
+for i in range(n):
     print(arr2[i], end=" ")
