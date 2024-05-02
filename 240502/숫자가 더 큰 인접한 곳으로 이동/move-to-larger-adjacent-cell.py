@@ -28,5 +28,6 @@ while 1:
             print(max_num, end=' ')
             visit[nx][ny] = 1
             cur_pos = (nx, ny)
+            break
     if cur_pos == tmp:
         break
