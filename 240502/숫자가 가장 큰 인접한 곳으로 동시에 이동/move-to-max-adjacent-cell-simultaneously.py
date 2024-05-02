@@ -8,8 +8,8 @@ arr = [
 def simulation(x, y, count, max_locs):
     dxs = [-1,1,0,0]
     dys = [0,0,-1,1]
-    max_num = arr[x][y]
-    max_loc = (x,y)
+    max_num = arr[x-1][y]
+    max_loc = (x-1,y)
     for dx, dy in zip(dxs, dys):
         nx = x + dx
         ny = y + dy
