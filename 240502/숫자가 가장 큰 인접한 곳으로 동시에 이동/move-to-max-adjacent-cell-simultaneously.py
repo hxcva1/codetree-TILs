@@ -11,17 +11,14 @@ def simulation(x, y, count):
     for dx, dy in zip(dxs, dys):
         nx = x + dx
         ny = y + dy
-        if can_move(nx,ny, arr[x][y], arr):
-            count[x][y] = 0
+        if in_range(nx,ny) and arr[nx][ny] > arr[x][y]:
+            count[x][y] -= 1 
             count[nx][ny] += 1
             return
 
 
 def in_range(x, y):
     return 0 <= x and x < n and 0 <= y and y < n
-
-def can_move(x, y, max_num, arr):
-    return in_range(x,y) and arr[x][y] > max_num
     
 count = [
     [0] * n
