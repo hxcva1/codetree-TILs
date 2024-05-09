@@ -17,7 +17,7 @@ def in_range(x, y):
 ans = 0
 def dfs(x, y):
     global ans
-    if x == N and y == M:
+    if x == N-1 and y == M-1:
         ans = 1
         return
     for nx, ny in zip(dx, dy):
