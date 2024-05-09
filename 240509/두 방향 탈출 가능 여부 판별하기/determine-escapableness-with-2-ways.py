@@ -22,7 +22,7 @@ def dfs(x, y):
         return
     for nx, ny in zip(dx, dy):
         nxt_x, nxt_y = x + nx, y + ny
-        if in_range(nxt_x, nxt_y) and board[nxt_x][nxt_x] == 1:
+        if in_range(nxt_x, nxt_y) and board[nxt_x][nxt_y] == 1:
             visit[nxt_x][nxt_y] = 1
             dfs(nxt_x, nxt_y)
 
