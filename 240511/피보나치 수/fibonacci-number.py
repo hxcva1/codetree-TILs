@@ -1,5 +1,7 @@
 n = int(input())
-
+if n == 1 or n == 2:
+    print(1)
+    exit()
 dp = [0] * (n+1)
 
 dp[1] = 1
